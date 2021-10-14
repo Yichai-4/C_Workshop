@@ -1,5 +1,9 @@
 #pragma once
 
+/** @file \Math.h
+ *
+ * Math utilities.
+ */
 /** @brief Returns the greatest of the two numbers.
  *
  * @param a  the first number
@@ -15,3 +19,4 @@ int Max(int a, int b);
  * @returns  the smallest of a and b
  */
 int Min(int a, int b);
+
