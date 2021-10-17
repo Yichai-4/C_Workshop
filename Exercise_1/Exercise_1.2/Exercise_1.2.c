@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include "Warmup.h"
+#include "MoreWarmup.h"
+#include <ctype.h> 
 
 int main()
 {
 	char userChar;
-    printf("Please enter a chararacter (press Q or q to quit):\n");
+	printf("Please enter a chararacter (press Q or q to quit):\n");
 
 	while (1)
 	{
@@ -14,9 +15,10 @@ int main()
 		{
 			break;
 		}
-		printf("%c", userChar);
+		printf("%c", toupper(userChar));
 	}
 
 	getchar();
 	return 0;
 }
+
