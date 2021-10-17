@@ -1,7 +1,7 @@
 #pragma once
 
-/** @file Warmup.h
- *  Warmup utilities
+/** @file MoreWarmup.h
+ *  MoreWarmup utilities
  */
 
  /** @brief checks if the user input isn't 'Q' or 'q'
