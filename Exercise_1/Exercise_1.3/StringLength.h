@@ -7,7 +7,7 @@
 
 /** @brief implementation of strlen() function
  * 
- * @param str[] a string of characters
- * @returns the length of str
+ *  @param str[] a string of characters
+ *  @returns the length of str
  */
 int MyStrlen(char str[]);
