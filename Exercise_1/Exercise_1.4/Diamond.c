@@ -2,14 +2,14 @@
 
 void CreateDiamond(int baseLength)
 {
-	int iterator = baseLength;
-    int c, k;
+	int iterator, k;
+
     for (k = 1; k <= baseLength; k++)
     {
-        for (c = 1; c <= baseLength - k; c++)
+        for (iterator = 1; iterator <= baseLength - k; iterator++)
             printf(" ");
 
-        for (c = 1; c <= 2 * k - 1; c++)
+        for (iterator = 1; iterator <= 2 * k - 1; iterator++)
             printf("*");
 
         printf("\n");
@@ -17,10 +17,10 @@ void CreateDiamond(int baseLength)
 
     for (k = 1; k <= baseLength - 1; k++)
     {
-        for (c = 1; c <= k; c++)
+        for (iterator = 1; iterator <= k; iterator++)
             printf(" ");
 
-        for (c = 1; c <= 2 * (baseLength - k) - 1; c++)
+        for (iterator = 1; iterator <= 2 * (baseLength - k) - 1; iterator++)
             printf("*");
 
         printf("\n");
