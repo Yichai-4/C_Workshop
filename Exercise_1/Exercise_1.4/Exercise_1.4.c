@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "Diamond.h"
 
-int main()
+int main(void)
 {
-    int length = 10;
+    size_t length = 10;
     printf("Hello World!\n");
     CreateDiamond(length);
 

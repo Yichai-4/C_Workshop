@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "StringLength.h"
 
-int main()
+int main(void)
 {
 	char str1[] = "Hello";
 	char str2[] = "W";
