@@ -5,6 +5,7 @@
  */
 
 /** @brief sorting an array of numbers from smallest to greatest
+ * 
  * @param an array of integers
  * @returns an sorted array
  */
