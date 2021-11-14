@@ -8,16 +8,24 @@ typedef struct Next_t {
 
 int GetFibLazy(int num)
 {
-	int term1 = 0;
-	int term2 = 1;
-	int nextTerm;
-
-	for (int i = 3; i <= num; ++i)
+	if (num <= 100)
 	{
-		nextTerm = term1 + term2;
-		term1 = term2;
-		term2 = nextTerm;
+		int term1 = 0;
+		int term2 = 1;
+		int nextTerm;
+
+		for (int i = 3; i <= num; ++i)
+		{
+			nextTerm = term1 + term2;
+			term1 = term2;
+			term2 = nextTerm;
+		}
+
+		return nextTerm;
 	}
 
-	return nextTerm;
+	else
+	{
+		return -1;
+	}
 }
