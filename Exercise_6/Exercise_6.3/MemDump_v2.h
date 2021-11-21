@@ -2,6 +2,8 @@
 
 /** @file MemDump_v2.h
  *  MemDump_v2 utilities.
+ *  
+ *  @author Yichaï Hazan
  */
 
 /** @brief takes a variable’s address and its size in bytes, and then prints the binary representation of that variable.

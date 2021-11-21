@@ -1,9 +1,10 @@
 #include "MemDump_v2.h"
 #include <stdio.h>
+#include<limits.h>
 
-void PrintBin(int* varAddress, int varSize)
+void PrintBin(int *varAddress, int varSize)
 {
-	unsigned char* b = (unsigned char*)varAddress;
+	unsigned char *b = (unsigned char*)varAddress;
 	unsigned char byte;
 	int i, j;
 	int counter = 0;
@@ -21,11 +22,11 @@ void PrintBin(int* varAddress, int varSize)
 			printf("%u", byte);
 		}
 	}
-	puts("");
+	printf("\n");
 }
 
 
-void PrintBin_v2(int* varAddress, int varSize)
+void PrintBin_v2(int *varAddress, int varSize)
 {
 	if (varSize == 1)
 	{
@@ -42,5 +43,26 @@ void PrintBin_v2(int* varAddress, int varSize)
 		{
 			printf("%x\n", varAddress[i]);
 		}
+	}
+}
+
+
+void PrintBin_v3(void* var, size_t sizeOf)
+{
+	unsigned char* p = (unsigned char*)var;
+
+	for (size_t i = 0; i < sizeOf; ++i)
+	{
+		for (size_t j = CHAR_BIT; j > 0; --j)
+		{
+			unsigned char bit = (p[i] >> j - 1) & 1;
+			printf("%d", bit);
+
+			if (j == 5)
+			{
+				printf(" ");
+			}
+		}
+		printf("\n");
 	}
 }
