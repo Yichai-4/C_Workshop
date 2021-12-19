@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7f32061e-0c88-423b-b7f1-010c9925e901}</ProjectGuid>
-    <RootNamespace>Exercise42</RootNamespace>
+    <ProjectGuid>{c8347122-0992-4663-b2b4-34c1ba86de9b}</ProjectGuid>
+    <RootNamespace>Exercise44</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,11 +151,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Exercise_4.2.c" />
-    <ClCompile Include="ReverseSentence.c" />
+    <ClCompile Include="Environment.c" />
+    <ClCompile Include="Exercise_4.4.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ReverseSentence.h" />
+    <ClInclude Include="Environment.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
