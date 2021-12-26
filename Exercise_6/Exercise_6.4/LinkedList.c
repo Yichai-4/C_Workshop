@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 
+
 typedef struct Node_t
 {
 	int value;
@@ -27,7 +28,7 @@ List* CreateList()
 	head->next = NULL;
 }
 
-void FreeList(List* list)
+void FreeList(List *list)
 {
 	while (list->head != NULL)
 	{
@@ -37,7 +38,8 @@ void FreeList(List* list)
 	}
 }
 
-size_t GetListSize(List* list)
+
+size_t GetListSize(List *list)
 {
 	int size = 0;  // Initialize count
 	Node *current = list->head;  // Initialize current
@@ -50,22 +52,26 @@ size_t GetListSize(List* list)
 	return size;
 }
 
-Node* GetListHead(List* list)
+
+Node *GetListHead(List *list)
 {
 	return list->head;
 }
 
-Node* GetNextNode(Node* currentNode)
+
+Node *GetNextNode(Node *currentNode)
 {
 	return currentNode->next;
 }
 
-ListDataType GetValue(Node* node)
+
+ListDataType GetValue(Node *node)
 {
 	return node->value;
 }
 
-Node* Insert(Node* after, ListDataType newValue)
+
+Node *Insert(Node *after, ListDataType newValue)
 {
 	/*1. check if the given prev_node is NULL */
 	if (after == NULL)
@@ -87,7 +93,7 @@ Node* Insert(Node* after, ListDataType newValue)
 	after->next = newNode;
 }
 
-Node* PushFront(List* list, ListDataType newValue)
+Node *PushFront(List *list, ListDataType newValue)
 {
 	/* 1. allocate node */
 	Node *newNode = (struct Node*)malloc(sizeof(Node));
@@ -104,7 +110,7 @@ Node* PushFront(List* list, ListDataType newValue)
 	return newNode;
 }
 
-Node* PushBack(List* list, ListDataType newValue)
+Node *PushBack(List *list, ListDataType newValue)
 {
 	//create a new node
 	Node *newNode = malloc(sizeof(Node));
@@ -118,7 +124,7 @@ Node* PushBack(List* list, ListDataType newValue)
 	return newNode;
 }
 
-ListDataType PopFront(List* list)
+ListDataType PopFront(List *list)
 {
 	// underflow condition
 	if (list->head == NULL) {
@@ -135,7 +141,7 @@ ListDataType PopFront(List* list)
 	return result;
 }
 
-ListDataType PopBack(List* list)
+ListDataType PopBack(List *list)
 {
 	if (list->head == NULL)
 		return NULL;
@@ -158,7 +164,7 @@ ListDataType PopBack(List* list)
 	return list->head;
 }
 
-void DeleteListNode(List* list, Node* target)
+void DeleteListNode(List *list, Node *target)
 {
 
 	// If linked list is empty
@@ -194,7 +200,7 @@ void DeleteListNode(List* list, Node* target)
 	temp->next = next;
 }
 
-Node* DeleteListValue(List* list, ListDataType value)
+Node *DeleteListValue(List *list, ListDataType value)
 {
 	for (size_t i = 0; i < GetListSize; ++i)
 	{
@@ -207,7 +213,7 @@ Node* DeleteListValue(List* list, ListDataType value)
 	return list->current;
 }
 
-Node* FindInList(List* list, ListDataType value)
+Node *FindInList(List *list, ListDataType value)
 {
 	Node *current = list->head;  // Initialize current
 	while (current != NULL)
