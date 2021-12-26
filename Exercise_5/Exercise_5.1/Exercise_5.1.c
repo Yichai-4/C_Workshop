@@ -23,8 +23,19 @@ int main(void)
     Dog dogs[NUM_OF_DOGS] = { labrador, boxer, bulldog, dobermann };
 
     size_t dogsLength = sizeof(dogs) / sizeof(dogs[0]);
+    
     //SortByName(&dogs, dogsLength);
 
+    for (size_t i = 0; i < dogsLength; ++i)
+    {
+        printf("-Dog %d\n", i + 1);
+        printf("Name: %s\n", dogs[i].name);
+        printf("Weight: %d\n", dogs[i].weight);
+        printf("Size: %f\n", dogs[i].size);
+        printf("Color: %d\n\n", dogs[i].color);
+    }
+
+    //SortByWeight(&dogs, dogsLength);
 
     for (size_t i = 0; i < dogsLength; ++i)
     {
