@@ -15,17 +15,18 @@ typedef struct Dog_t
 
 int main(void)
 {
-    Dog labrador = {"Labrador", 30, 1.1, 11 };
-    Dog boxer = { "Boxer", 40, 1.2, 12 };
     Dog bulldog = { "Bulldog", 50, 1.3, 13 };
+    Dog labrador = {"Labrador", 30, 1.1, 11 };
     Dog dobermann = { "Dobermann", 60, 1.5, 15 };
+    Dog boxer = { "Boxer", 40, 1.2, 12 };
     
-    Dog dogs[NUM_OF_DOGS] = { labrador, boxer, bulldog, dobermann };
+    Dog dogs[NUM_OF_DOGS] = {  bulldog, labrador, dobermann, boxer };
 
     size_t dogsLength = sizeof(dogs) / sizeof(dogs[0]);
     
-    //SortByName(&dogs, dogsLength);
+    SortByName(&dogs, dogsLength);
 
+    printf("The array of dogs ordered by name:\n\n");
     for (size_t i = 0; i < dogsLength; ++i)
     {
         printf("-Dog %d\n", i + 1);
@@ -35,8 +36,10 @@ int main(void)
         printf("Color: %d\n\n", dogs[i].color);
     }
 
-    //SortByWeight(&dogs, dogsLength);
+    
+    SortByWeight(&dogs, dogsLength);
 
+    printf("\nThe array of dogs ordered by weight:\n\n");
     for (size_t i = 0; i < dogsLength; ++i)
     {
         printf("-Dog %d\n", i + 1);

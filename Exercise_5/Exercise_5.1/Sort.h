@@ -15,12 +15,12 @@ typedef struct Dog_t Dog;
 
 /** @brief Receives an array of dogs and sorts them by their name
  * 
- *  @params A struct array of dogs and his length
+ *  @param A struct array of dogs and his length
  */
-void SortByName(struct Dog dogs[], size_t dogsLength);
+void SortByName(Dog *dogs, size_t dogsLength);
 
 /** @brief Receives an array of dogs and sorts them by their weight
  *
- *  @params A struct array of dogs and his length
+ *  @param A struct array of dogs and his length
  */
-void SortByWeight(struct Dog **dogs, size_t dogsLength);
+void SortByWeight(Dog *dogs, size_t dogsLength);
