@@ -6,10 +6,9 @@ int main(void)
 	char str1[] = "Hello";
 	char str2[] = "W";
 	
-
 	if (MyStrlen(str1) != 5)
 	{
-		printf("There is an error in the function\n");
+		printf("There is an error in the function MyStrlen\n");
 	}
 	else
 	{
@@ -17,6 +16,6 @@ int main(void)
 	}
 
 	printf("%d", MyStrlen(str2));
-	getchar();
-    return 0;
+
+	return 0;
 }

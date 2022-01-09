@@ -37,7 +37,7 @@ void SortByWeight(Dog *dogs, size_t dogsLength)
     {
         for (size_t j = i + 1; j < dogsLength; ++j)
         {
-            if (dogs[i].weight < dogs[j].weight)
+            if (dogs[i].weight > dogs[j].weight)
             {
                 temp = dogs[i];
                 dogs[i] = dogs[j];

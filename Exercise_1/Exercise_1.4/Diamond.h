@@ -7,7 +7,7 @@
 
 /** @brief Displays a diamond with base length given
  * 
- *  @param baseLength the length of the diamond's base
- *  @returns a corresponding diamond
+ *  @param baseLength  the length of the diamond's base
+ *  @returns  the diamond with the corresponding base length
  */
 void CreateDiamond(int baseLength);

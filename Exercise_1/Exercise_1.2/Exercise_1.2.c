@@ -5,20 +5,20 @@
 int main(void)
 {
 	char userChar;
+	int checkResult;
 	printf("Please enter a chararacter (press Q or q to quit):\n");
 
 	while (1)
 	{
 		scanf_s("%c", &userChar, sizeof(char));
-		int result = ValidInput(userChar);
-		if (!result)
+		checkResult = ValidInput(userChar);
+		if (!checkResult)
 		{
 			break;
 		}
 		printf("%c", toupper(userChar));
 	}
 
-	getchar();
 	return 0;
 }
 

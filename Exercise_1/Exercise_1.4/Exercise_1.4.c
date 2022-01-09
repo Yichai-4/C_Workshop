@@ -3,11 +3,12 @@
 
 int main(void)
 {
-    size_t length = 10;
-    printf("Hello World!\n");
-    CreateDiamond(length);
+    size_t baseLength = 5;
 
-    getchar();
+    printf("Diamond with a base of %d:\n", baseLength);
+
+    CreateDiamond(baseLength);
+
     return 0;
 }
 
