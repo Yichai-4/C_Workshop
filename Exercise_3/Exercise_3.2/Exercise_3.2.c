@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include "Sort.h"
 
-int main()
+int main(void)
 {
-    //printf("Hello World!\n");
-    int arraySize = 10;
-    int my_array[10] = { 8, 4, 3, 2, 5, 6, 1, 9 };
-    SortArray(my_array, arraySize);
+    int myArray[] = { 8, 4, 3, 2, 5, 6, 1, 9 };
+    int arraySize = sizeof(myArray) / sizeof(myArray[0]);
     
-    for (size_t i = 0; i < arraySize; i++)
+    SortArray(myArray, arraySize);
+    
+    for (size_t i = 0; i < arraySize; ++i)
     {
-        printf("%d\n", my_array[i]);
+        printf("%d ", myArray[i]);
     }
 
     return 0;

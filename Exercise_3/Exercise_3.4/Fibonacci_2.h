@@ -1,3 +1,4 @@
+#include <stdio.h>
 #pragma once
 
 /** @file Fibonacci_2.h
@@ -5,7 +6,7 @@
  */
 
 /** @brief Calculates the fibonacci number at the number place, using lazy evaluation
- * @param the number which represents the place of the fibonacci number
+ * @param number  the number which represents the place of the fibonacci number
  * @returns the corresponding fibonacci number
  */
-int GetFibLazy(int number);
+long long int GetFibLazy(size_t number);

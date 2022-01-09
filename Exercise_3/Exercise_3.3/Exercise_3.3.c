@@ -3,12 +3,13 @@
 
 int main(void)
 {
+    size_t number;
+
     printf("Please enter an integer:\n");
-    int number;
     scanf_s("%d", &number);
 
-    int fibonacciNumber = GetFibNumber(number);
-    printf("Your fibonacci number is: %d", fibonacciNumber);
+    long long int fibonacciNumber = GetFibNumber(number);
+    printf("Your fibonacci number is: %lld", fibonacciNumber);
 
     return 0;
 }

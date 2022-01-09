@@ -4,9 +4,10 @@
  *  Sort utils.
  */
 
-/** @brief sorting an array of numbers from smallest to greatest
+/** @brief Sorting the numbers in an array from smallest to greatest
  * 
- * @param an array of integers
- * @returns an sorted array
+ * @param array[]  an array of integers
+ * @param arraySize  the array size (i.e. the number of integers in the array)
+ * @returns  an sorted array
  */
 void SortArray(int array[], int arraySize);

@@ -1,6 +1,6 @@
 #include "MoreWarmup.h"
 
-int ValidInput(char userInput)
+int ShouldContinue(char userInput)
 {
 	if (userInput == 'Q' || userInput == 'q')
 	{

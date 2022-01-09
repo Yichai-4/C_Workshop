@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "Fibonacci_1.h"
 
-int GetFibNumber(int num)
+long long int GetFibNumber(size_t num)
 {
-	int term1 = 0;
-	int term2 = 1;
-	int nextTerm;
+	long long int term1 = 0;
+	long long int term2 = 1;
+	long long int nextTerm;
 
 	for (int i = 3; i <= num; ++i)
 	{

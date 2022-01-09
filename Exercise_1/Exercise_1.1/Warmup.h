@@ -7,6 +7,6 @@
 /** @brief Checks if the user input is 'Q' or 'q'
  * 
  * @param userInput  the char entered by the user
- * @returns  int value according to the user's input
+ * @returns  0 if need to quit, otherwise 1
  */
-int ValidInput(char userInput);
+int ShouldContinue(char userInput);

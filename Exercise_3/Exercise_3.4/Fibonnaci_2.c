@@ -1,18 +1,13 @@
+#include <stdio.h>
 #include "Fibonacci_2.h"
 
-typedef struct Next_t {
-	int term1;
-	int term2;
-	int nextTerm;
-} Next;
-
-int GetFibLazy(int num)
+long long int GetFibLazy(size_t num)
 {
 	if (num <= 100)
 	{
-		int term1 = 0;
-		int term2 = 1;
-		int nextTerm;
+		long long int term1 = 0;
+		long long int term2 = 1;
+		long long int nextTerm;
 
 		for (int i = 3; i <= num; ++i)
 		{

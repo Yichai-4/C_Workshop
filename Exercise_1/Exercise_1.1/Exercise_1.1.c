@@ -9,8 +9,9 @@ int main(void)
 
 	while (1)
 	{
-		scanf_s("%c", &userChar, sizeof(char));
-		result = ValidInput(userChar);
+		userChar = getchar();
+		// Other way: scanf_s("%c", &userChar, sizeof(char));
+		result = ShouldContinue(userChar);
 		if (!result)
 		{
 			break;
