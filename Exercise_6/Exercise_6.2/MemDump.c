@@ -22,9 +22,9 @@ void PrintHex(int *varAddress, int varSize)
 }
 
 
-void PrintHex_v2(void* var, size_t sizeOf)
+void PrintHex_v2(void *var, size_t sizeOf)
 {
-	unsigned char* p = (unsigned char*)var;
+	unsigned char *p = (unsigned char*)var;
 
 	for (size_t i = 0; i < sizeOf; ++i)
 	{
