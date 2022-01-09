@@ -7,10 +7,10 @@ void TrinaryOperatorCode(int num);
 
 int main()
 {
-	// printf("Hello World!\n");
 	int userNum;
 	printf("Please enter an integer: ");
 	scanf_s("%d", &userNum);
+	
 	IfCode(userNum);
 	IfElseCode(userNum);
 	SwitchCode(userNum);
